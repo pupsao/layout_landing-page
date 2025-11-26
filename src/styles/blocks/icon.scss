@@ -3,6 +3,9 @@
   width: 24px;
   height: 24px;
   background-size: cover;
+  transition: transform 0.3s;
+
+  @include hover(transform, scale(1.2));
 
   @include on-tablet {
     height: 32px;
@@ -10,14 +13,18 @@
   }
 
   &--phone {
-    background-image: url(../icons/Icon-Phone-call.png);
+    background-image: url(../icons/Icon-Phone-call.svg);
   }
 
   &--menu {
-    background-image: url(../icons/Icon-Burger-menu.png);
+    background-image: url(../icons/Icon-Burger-menu.svg);
+
+    &:hover {
+      background-image: url(../icons/Icon-Burger-menu-hover.svg);
+    }
   }
 
   &--close {
-    background-image: url(../icons/open-menu.png);
+    background-image: url(../icons/open-menu.svg);
   }
 }

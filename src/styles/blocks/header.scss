@@ -9,9 +9,13 @@
   justify-content: space-between;
 
   &__bottom {
-    padding-bottom: 150px;
+    padding-bottom: 170px;
 
     @include content-padding-inline;
+
+    @include on-tablet {
+      padding-bottom: 200px;
+    }
   }
 
   &__title {
@@ -19,7 +23,11 @@
     font-weight: 700;
     font-style: Bold;
     line-height: 100%;
-    font-size: 54px;
+    font-size: 48px;
     text-align: center;
+
+    @include on-tablet {
+      font-size: 64px;
+    }
   }
 }
