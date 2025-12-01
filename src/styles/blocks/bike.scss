@@ -2,6 +2,7 @@
   color: black;
   &__bike {
     @include page-grid;
+
     row-gap: 40px;
   }
 }
@@ -40,9 +41,11 @@
 
   &__product {
     grid-column: 1 / -1;
+
     @include on-tablet {
       grid-column: 2 / -2;
     }
+
     @include on-desktop {
       grid-column: span 4;
     }
