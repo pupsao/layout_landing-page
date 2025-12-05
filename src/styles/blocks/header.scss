@@ -1,5 +1,4 @@
 .header {
-  // display: none !important;
   background-image: url(../img/background-photo.png);
   background-size: cover;
   background-position: 85%;
@@ -24,7 +23,6 @@
   }
 
   &__title {
-    margin: 0;
     font-weight: 700;
     font-style: Bold;
     line-height: 100%;
