@@ -4,9 +4,13 @@
   background-color: #c2c2c2;
   font-weight: 600;
   text-transform: uppercase;
+  overflow: auto;
 
   &__top {
     margin-bottom: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 
   &__nav {
@@ -20,6 +24,10 @@
     color: $menu-text-color;
     text-decoration: none;
     margin-bottom: 16px;
+    transition: 0.3s;
+    &:hover {
+      color: $hover-menu-text-color;
+    }
   }
 
   &__call-to-order {
@@ -32,5 +40,9 @@
     letter-spacing: 2px;
     color: $menu-text-color;
     text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: $hover-menu-text-color;
+    }
   }
 }
